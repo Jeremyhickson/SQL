@@ -1,0 +1,4 @@
+SELECT Product, COUNT(location) AS Location
+FROM BIT_DB.JanSales
+WHERE location LIKE '%New York%' AND Quantity > 1
+GROUP BY Product
